@@ -59,7 +59,7 @@ class modResourcePlanning extends DolibarrModules
 		// Module description
 		// used if translation string 'ModuleXXXDesc' not found
 		// (where XXX is value of numeric property 'numero' of module)
-		$this->description = "Description of module Resource";
+		$this->description = "Description of module Resource planning";
 		// Possible values for version are: 'development', 'experimental' or version
 		$this->version = '0.1';
 		// Key used in llx_const table to save module status enabled/disabled
@@ -101,7 +101,7 @@ class modResourcePlanning extends DolibarrModules
 
 		// Data directories to create when module is enabled.
 		// Example: this->dirs = array("/resource/temp");
-		$this->dirs = array("/resource");
+		$this->dirs = array();
 
 		// Config pages. Put here list of php pages
 		// stored into resource/admin directory, used to setup module.
@@ -234,7 +234,7 @@ class modResourcePlanning extends DolibarrModules
 		$this->rights[$r][4] = 'read';
 		$r++;
 
-		
+
 
 		// Add here list of permission defined by
 		// an id, a label, a boolean and two constant strings.
@@ -256,7 +256,7 @@ class modResourcePlanning extends DolibarrModules
 		$this->menu = array(); // List of menus to add
 		$r = 0;
 
-	
+
 		// Menus declaration
 		$this->menu[$r]=array(
 			'fk_menu'=>'fk_mainmenu=tools,fk_leftmenu=resource',
